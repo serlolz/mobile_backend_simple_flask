@@ -9,7 +9,7 @@ def get_news_all_articles():
 	data=[]
 	with open('news_data.json', 'r') as file:
 		data = json.load(file)
-	app.logger.debug('___________________'+str(data))
+	app.logger.debug('_________________Hello '+str(data))
 	return json.dumps(data)
 
 
