@@ -1,8 +1,10 @@
-from flask import Flask
+from flask import Flask	
 import json
+from flask_cors import CORS   # ✅ add this
 import datetime
 
 app = Flask(__name__)
+CORS(app)  # ✅ enable CORS
 
 
 @app.route('/news.all.get')
